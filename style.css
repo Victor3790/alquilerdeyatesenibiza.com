@@ -457,3 +457,12 @@ object {
 }
 
 /*# sourceMappingURL=style.css.map */
+/*Extra custom styles.*/
+.site-title a{
+  color: #fff;
+}
+
+.site-title a:hover{
+  color: #fff;
+  text-decoration: none;
+}

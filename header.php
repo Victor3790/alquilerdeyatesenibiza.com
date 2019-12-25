@@ -15,6 +15,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
@@ -44,12 +45,14 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'cbt' ); ?></button>
+		<nav id="site-navigation" class="main-navigation cbtHeader__menu-container">
+			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'cbt' ); ?></button>-->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
+				'menu_class'	   => 'cbtHeader__navList-container',
+				//'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

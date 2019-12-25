@@ -3,6 +3,8 @@
  * Enqueue scripts and styles.
  */
 function cbt_scripts() {
+	wp_enqueue_style('cbt-google-fonts', 'https://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400,700&display=swap');
+	
 	wp_enqueue_style( 'cbt-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'cbt-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

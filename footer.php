@@ -13,20 +13,39 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cbt' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cbt' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cbt' ), 'cbt', '<a href="http://underscores.me/">Victor Crespo</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer bbFooter">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					<h4 class="bbFooter__title">Contacto</h4>
+					<p class="bbFooter__text">
+						Carrer de Juan Carles nº1,<br>
+						Ibiza Nueva,<br>
+						07800 (Ibiza).
+					</p>
+					<p class="bbFooter__text">
+						Llámanos: 620 269 020 <br>
+						Escríbenos: correo@barcosbarcelona.com
+					</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<h4 class="bbFooter__title">Horario</h4>
+					<p class="bbFooter__text">
+						De Lunes a Viernes <br>
+						10:00 - 18:00 h. <br>
+						Sábado <br>
+						10:00 - 14:00 h.
+					</p>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="bbFooter__social">
+						<img class="bbFooter__social-icon" src="<?php echo get_template_directory_uri(); ?>/imgs/facebook.png" alt="">
+						<img class="bbFooter__social-icon" src="<?php echo get_template_directory_uri(); ?>/imgs/twitter.png" alt="">
+						<img class="bbFooter__social-icon" src="<?php echo get_template_directory_uri(); ?>/imgs/pinterest.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

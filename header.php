@@ -26,6 +26,11 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'cbt' ); ?></a>
 
 	<header id="masthead" class="site-header cbtHeader">
+		<div id="smallMenuIcon" class="cbtSmallMenu">
+			<div class="cbtSmallMenu__bar"></div>
+			<div class="cbtSmallMenu__bar"></div>
+			<div class="cbtSmallMenu__bar"></div>
+		</div>
 		<div class="site-branding cbtHeader__logo-container">
 		<?php
 			the_custom_logo();
@@ -46,13 +51,22 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation cbtHeader__menu-container">
-			<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'cbt' ); ?></button>-->
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
 				'menu_class'	   => 'cbtHeader__navList-container',
-				//'items_wrap'      => '<ul class="%2$s">%3$s</ul>',
+			) );
+			?>
+		</nav><!-- #site-navigation -->
+
+		<nav id="smallMenu" class="main-navigation cbtHeader__menu-container-small">
+			<span id="close" class="cbtSmallMenu__close"></span>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+				'menu_class'	   => 'cbtHeader__navList-container-small',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

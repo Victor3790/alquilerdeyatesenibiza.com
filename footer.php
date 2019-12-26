@@ -13,6 +13,10 @@
 
 	</div><!-- #content -->
 
+	<div id="toTop" class="toTop__container">
+		<img class="toTop" src="<?php echo get_template_directory_uri() ?>/imgs/top.png" alt="">
+	</div>
+
 	<footer id="colophon" class="site-footer bbFooter">
 		<div class="container">
 			<div class="row">

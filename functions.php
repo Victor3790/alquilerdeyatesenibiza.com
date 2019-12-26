@@ -19,6 +19,10 @@ add_action( 'widgets_init', 'cbt_widgets_init' );
 include (get_theme_file_path('/inc/cbt_scripts.php'));
 add_action( 'wp_enqueue_scripts', 'cbt_scripts' );
 
+//Load extra styles in head if home
+include (get_theme_file_path('/inc/cbt_index_styles.php'));
+add_action( 'wp_head', 'cbt_index_styles' );
+
 /**
  * Implement the Custom Header feature.
  */

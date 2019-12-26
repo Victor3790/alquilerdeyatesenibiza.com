@@ -18,11 +18,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<h1>inicio dude</h1>
+			<?php get_template_part( 'template-parts/cbt_index' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+
 get_footer();

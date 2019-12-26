@@ -1,0 +1,226 @@
+.hero {
+  height: calc(100vh - 100px);
+  min-height: 400px;
+  background-size: cover; }
+
+.hero__text-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+  .hero__text-container .button {
+    width: 80px; }
+
+.hero__text-header {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px; }
+
+.hero__text {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center; }
+
+#slide1 .hero__text-container {
+  top: 0; }
+
+#slide2 .hero__text-container {
+  top: 0; }
+
+#slide3 .hero__text-container {
+  top: 0; }
+
+.welcome {
+  margin-top: 50px; }
+
+.welcome__title {
+  margin-bottom: 25px; }
+
+.welcome__subtitle {
+  margin-bottom: 20px; }
+
+.form {
+  background-position: center;
+  background-size: cover;
+  padding: 80px 0; }
+
+.form__text-input {
+  width: 100%;
+  border-radius: 0px;
+  padding: 9px;
+  color: #919b9b;
+  font-size: 12px;
+  margin-bottom: 10px;
+  border: 0; }
+
+.introduction {
+  margin-top: 50px;
+  padding: 0 40px; }
+
+.introduction__title {
+  margin-bottom: 25px; }
+
+.introduction__subtitle {
+  margin-bottom: 20px; }
+
+.introduction__text {
+  padding: 0; }
+
+.numbers {
+  background-color: #f7f7f7;
+  margin-top: 50px; }
+
+.numbers__title {
+  margin-top: 35px;
+  margin-bottom: 25px; }
+
+.numbers__item {
+  padding: 35px 0; }
+
+.numbers__item-top {
+  font-weight: 400;
+  text-align: center; }
+
+.numbers__item-number {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto; }
+
+.numbers__item-text {
+  margin-bottom: 30px; }
+
+.assets {
+  margin-top: 50px; }
+
+.asset {
+  height: auto; }
+
+.asset__image {
+  height: 350px;
+  background-position: center;
+  background-size: cover; }
+
+.asset__text-container {
+  background-color: #f7f7f7;
+  padding: 80px; }
+
+.asset__title {
+  margin-bottom: 25px; }
+
+.asset__text {
+  text-align: center; }
+
+.swiper-button-prev {
+  background-color: #000;
+  color: #919b9b; }
+
+.swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000; }
+
+.swiper-button-next {
+  background-color: #000;
+  color: #919b9b; }
+
+.swiper-button-next::after {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000; }
+
+@media (min-width: 576px) {
+  .hero__text-container {
+    width: 350px;
+    margin: 0;
+    top: 35px;
+    left: 70px; }
+  #slide2 {
+    background-position: center; }
+  .form {
+    padding: 50px 80px; } }
+
+@media (min-width: 768px) {
+  .hero {
+    height: 100vh; }
+  .hero__text-container {
+    padding: 25px; }
+  #slide1 .hero__text-container {
+    top: 135px;
+    left: 350px; }
+  #slide2 .hero__text-container {
+    top: 135px; }
+  #slide3 .hero__text-container {
+    top: 135px;
+    left: 15px; }
+  .welcome {
+    margin-top: 70px; }
+  .welcome__title {
+    margin-bottom: 30px; }
+  .welcome__subtitle {
+    margin-bottom: 35px; }
+  .introduction {
+    margin-top: 70px;
+    padding: 0 80px; }
+  .introduction__title {
+    margin-bottom: 30px; }
+  .introduction__subtitle {
+    margin-bottom: 35px; }
+  .numbers {
+    margin-top: 70px; }
+  .numbers__title {
+    margin-bottom: 30px; }
+  .form {
+    padding: 100px 0; } }
+
+@media (min-width: 992px) {
+  .hero__text-top {
+    font-size: 16px; }
+  .hero__text-header {
+    font-size: 28px; }
+  .hero__text {
+    font-size: 16px;
+    line-height: 20px; }
+  #slide1 .hero__text-container {
+    left: 500px; }
+  #slide2 .hero__text-container {
+    left: 200px; }
+  #slide3 .hero__text-container {
+    left: 300px; }
+  .form {
+    padding: 150px 0; }
+  .introduction__text {
+    padding: 0 150px; }
+  .asset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .asset:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .asset__image {
+    width: 50%; }
+  .asset__text-container {
+    width: 50%;
+    padding: 60px; } }
+
+@media (min-width: 1200px) {
+  .hero__text-top {
+    font-size: 18px; }
+  .hero__text-header {
+    font-size: 30px; }
+  .hero__text {
+    font-size: 18px;
+    line-height: 25px; }
+  #slide1 .hero__text-container {
+    top: 140px;
+    left: 63%; }
+  #slide2 .hero__text-container {
+    left: 50px; }
+  #slide3 .hero__text-container {
+    left: 69%; } }
+

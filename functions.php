@@ -23,6 +23,15 @@ add_action( 'wp_enqueue_scripts', 'cbt_scripts' );
 include (get_theme_file_path('/inc/cbt_index_styles.php'));
 add_action( 'wp_head', 'cbt_index_styles' );
 
+//Load extra styles in head if page
+include (get_theme_file_path('/inc/cbt_page_styles.php'));
+add_action( 'wp_head', 'cbt_page_styles' );
+
+//Add Custom image sizes
+add_image_size('cbt_large', 1800, 1200, true);
+add_image_size('cbt_small_retina', 1600, 1100, true);
+add_image_size('cbt_small', 800, 1000, true);
+
 /**
  * Implement the Custom Header feature.
  */

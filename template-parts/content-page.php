@@ -10,21 +10,28 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	<div class="pageHeader">
+		<div class="pageHeader__title-container">
+			<?php the_title( '<h1 class="pageHeader__title">', '</h1>' ); ?>
+		</div>
+		<div class="pageHeader__bottomLine"></div>
+	</div><!-- .pageHeader -->
 
-	<?php cbt_post_thumbnail(); ?>
+	<div class="entry-content content">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<?php
+					the_content();
 
-	<div class="entry-content">
-		<?php
-		the_content();
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cbt' ),
-			'after'  => '</div>',
-		) );
-		?>
+					wp_link_pages( array(
+						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cbt' ),
+						'after'  => '</div>',
+					) );
+					?>
+				</div>
+			</div>
+		</div>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

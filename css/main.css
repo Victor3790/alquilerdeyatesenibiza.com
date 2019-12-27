@@ -1500,7 +1500,7 @@ img {
 
 .cbtHeader {
   width: 100%;
-  background-color: #000;
+  background-color: #313131;
   overflow: hidden; }
 
 .cbtHeader__logo-container {
@@ -1519,7 +1519,8 @@ img {
   font-family: "Lato", sans-serif;
   color: #919b9b;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  font-size: 16px; }
 
 .custom-logo {
   height: 25px !important;
@@ -1534,7 +1535,7 @@ img {
   width: 0;
   z-index: 3;
   padding-top: 85px;
-  background-color: #000; }
+  background-color: rgba(0, 0, 0, 0.8); }
 
 .cbtHeader__navList-container-small {
   display: none;
@@ -1602,21 +1603,31 @@ img {
 
 .cbtSmallMenu {
   position: absolute;
-  top: 15px;
-  left: 1px;
-  border: 2px solid #919b9b;
-  border-radius: 5px;
+  top: 25px;
+  left: 5px;
   width: 45px;
-  padding: 5px;
   margin-left: 10px;
   margin-bottom: 10px;
   cursor: pointer; }
 
 .cbtSmallMenu__bar {
-  height: 2px;
-  width: 30px;
+  height: 4px;
+  width: 40px;
+  border-radius: 5px;
   background-color: #919b9b;
-  margin: 5px 0; }
+  margin: 9px 0; }
+
+.cbtSmallMenu__bar:nth-child(1) {
+  width: 35px;
+  margin-left: 10px; }
+
+.cbtSmallMenu__bar:nth-child(2) {
+  width: 35px;
+  margin-right: 10px; }
+
+.cbtSmallMenu__bar:nth-child(3) {
+  width: 100%;
+  margin-right: 5px; }
 
 .cbtSmallMenu__close {
   position: absolute;

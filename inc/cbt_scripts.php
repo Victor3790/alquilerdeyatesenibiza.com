@@ -41,4 +41,8 @@ function cbt_scripts() {
 		wp_enqueue_script('cbt-index-footer-script', get_template_directory_uri() . '/js/index-footer.js', array('jquery','cbt-odometer-script'));
 	}
 
+	if (is_page()) {
+		wp_enqueue_style('cbt-page-style', get_template_directory_uri() . '/css/page.css');
+	}
+
 }

@@ -186,6 +186,7 @@
   #slide1 .hero__text-container {
     left: 500px; }
   #slide2 .hero__text-container {
+    width: 400px;
     left: 200px; }
   #slide3 .hero__text-container {
     left: 300px; }

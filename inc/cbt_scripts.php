@@ -38,11 +38,28 @@ function cbt_scripts() {
 
 		wp_enqueue_script('cbt-odometer-script', get_template_directory_uri() . '/js/odometer.min.js', array('jquery'), '1.0', true);
 
-		wp_enqueue_script('cbt-index-footer-script', get_template_directory_uri() . '/js/index-footer.js', array('jquery','cbt-odometer-script'));
+		wp_enqueue_style('cbt-aos-style', get_template_directory_uri() . '/css/aos.css');
+
+		wp_enqueue_script('cbt-aos-script', get_template_directory_uri() . '/js/aos.js', array(), '1.0', true);
+
+		wp_enqueue_script('cbt-range-script', get_template_directory_uri() . '/js/jquery.range.js', array('jquery'), '1.0', true);
+
+		wp_enqueue_style('cbt-range-style', get_template_directory_uri() . '/css/jquery.range.css');
+
+		wp_enqueue_script('cbt-index-footer-script', get_template_directory_uri() . '/js/index-footer.js', array('jquery','cbt-odometer-script','cbt-aos-script'));
 	}
 
-	if (is_page()) {
+	if (is_page() && !is_front_page()) {
 		wp_enqueue_style('cbt-page-style', get_template_directory_uri() . '/css/page.css');
+	}
+
+	if(is_singular('yate')){
+		wp_enqueue_style('cbt-page-style', get_template_directory_uri() . '/css/page.css');
+		wp_enqueue_style('cbt-pageYacht-style', get_template_directory_uri() . '/css/pageYacht.css');
+	}
+
+	if(is_post_type_archive('yate')){
+		wp_enqueue_style('cbt-yate-archive-style', get_template_directory_uri() . '/css/yachtList.css');
 	}
 
 }

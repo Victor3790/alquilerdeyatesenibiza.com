@@ -113,13 +113,13 @@ table {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #1c1c1c;
 }
 a:visited {
-  color: purple;
+  color: #1c1c1c;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #1c1c1c;
 }
 a:focus {
   outline: thin dotted;
@@ -383,23 +383,33 @@ object {
 # Custom
 --------------------------------------------------------------*/
 .site-title a {
-  color: #fff;
+  color: #fff!important;
 }
 .site-title a:hover {
-  color: #fff;
+  color: #fff!important;
   text-decoration: none;
 }
 
 .menu-item a {
-  color: #d1d1d1;
+  color: #d1d1d1!important;
 }
 .menu-item a:hover {
-  color: #d1d1d1;
+  color: #d1d1d1!important;
   text-decoration: none;
 }
 
 .page {
   margin: 0;
+}
+
+.error-404{
+  padding: 30px;
+}
+
+@media screen and (min-width:768px) {
+  .error-404{
+    padding-top: 200px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

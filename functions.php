@@ -6,7 +6,6 @@
  *
  * @package Custom_Base_Theme
  */
-
 include (get_theme_file_path('/inc/cbt_setup.php'));
 add_action( 'after_setup_theme', 'cbt_setup' );
 
@@ -27,10 +26,32 @@ add_action( 'wp_head', 'cbt_index_styles' );
 include (get_theme_file_path('/inc/cbt_page_styles.php'));
 add_action( 'wp_head', 'cbt_page_styles' );
 
+//Load extra styles in head if 'alquiler-yates'
+include (get_theme_file_path('/inc/cbt_alquiler_styles.php'));
+add_action( 'wp_head', 'cbt_alquiler_styles' );
+
+//Load extra styles in head if 'yates-lujo'
+include (get_theme_file_path('/inc/cbt_lujo_styles.php'));
+add_action( 'wp_head', 'cbt_lujo_styles' );
+
+//Load extra styles in head if 'yate type'
+include (get_theme_file_path('/inc/cbt_yate_styles.php'));
+add_action( 'wp_head', 'cbt_yate_styles' );
+
+//Register the custom query vars for the search form
+include (get_theme_file_path('/inc/cbt_query_vars.php'));
+add_filter( 'query_vars', 'cbt_query_vars' );
+
+//Function for custom queries
+include (get_theme_file_path('/inc/cbt_search_query.php'));
+add_action( 'pre_get_posts', 'cbt_search_query', 1 );
+
 //Add Custom image sizes
-add_image_size('cbt_large', 1800, 1200, true);
-add_image_size('cbt_small_retina', 1600, 1100, true);
-add_image_size('cbt_small', 800, 1000, true);
+add_image_size('cbt_large', 1900, 850, true);
+add_image_size('cbt_small', 800, 300, true);
+add_image_size('cbt_small_retina', 1400, 600, true);
+add_image_size('cbt_small_landscape', 900, 450, true);
+add_image_size('cbt_small_landscape_retina', 1500, 850, true);
 
 /**
  * Implement the Custom Header feature.

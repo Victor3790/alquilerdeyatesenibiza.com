@@ -1,8 +1,24 @@
+h1, h2, h3, h4, h5 {
+  margin: 28px 0 !important;
+}
+
+a {
+  color: #1c1c1c;
+  font-weight: bolder;
+}
+a:visited {
+  color: #1c1c1c;
+}
+a:hover, a:focus, a:active {
+  color: #1c1c1c;
+}
+
 .pageHeader {
   position: relative;
-  height: 50vh;
+  height: 200px;
   background-position: center;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat;}
 
 .pageHeader__title-container {
   position: absolute;
@@ -14,7 +30,8 @@
 
 .pageHeader__title {
   color: #fff;
-  font-size: 23px;
+  font-size: 20px;
+  margin: 0!important;
   text-align: left; }
 
 .pageHeader__bottomLine {
@@ -26,9 +43,9 @@
   z-index: 1; }
 
 .content {
-  padding: 50px 0; }
+  padding: 48px 0;
+  margin: 0;}
 
 @media (min-width: 768px) {
   .pageHeader {
-    height: 57vh; } }
-
+    height: 700px;} }

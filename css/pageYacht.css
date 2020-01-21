@@ -1,0 +1,65 @@
+.yacht__type {
+  text-transform: uppercase;
+  text-align: left;
+  color: #313131; }
+
+.yacht__name {
+  text-align: left;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px; }
+
+.yacht__guests-title {
+  border-right: 1px solid #000;
+  margin: 0 0 10px 0!important;}
+
+.yacht__crew-title {
+  border-left: 1px solid #000;
+  margin: 0 0 10px 0!important;}
+
+.yacht__cabins-title {
+  margin: 0 0 10px 0!important;}
+
+.yacht__guests {
+  margin: 0 0 30px 0!important;
+  padding: 0;
+  font-size: 30px; }
+
+.yacht__cabins {
+  margin: 0 0 30px 0!important;
+  padding: 0;
+  font-size: 30px; }
+
+.yacht__crew {
+  margin: 0 0 30px 0!important;
+  padding: 0;
+  font-size: 30px; }
+
+.yacht__details {
+  background-color: #313131;
+  padding: 30px;
+  padding-left: 40px; }
+  .yacht__details table {
+    width: 100%; }
+
+.yacht__detail {
+  display: block;
+  padding: 10px 0;
+  color: #ebebeb;
+  width: 100%;
+  border-bottom: 1px solid #919b9b; }
+
+.yacht__detail-header {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  line-height: 28px;
+  padding-right: 7px; }
+
+.yacht__detail-data {
+  font-size: 20px;
+  line-height: 28px;
+  padding-left: 7px; }
+
+td {
+  padding: 0 8px; }

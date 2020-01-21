@@ -11,29 +11,53 @@
     width: 80px; }
 
 .hero__text-header {
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 35px; }
+  font-size: 20px!important;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-weight: 500;
+  line-height: 30px; }
 
 .hero__text {
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 16px!important;
+  line-height: 15px;
   font-weight: 500;
   text-align: center; }
 
 #slide1 .hero__text-container {
-  top: 0; }
+  top: 20px; }
 
 #slide2 .hero__text-container {
-  top: 0; }
+  top: 20px; }
 
 #slide3 .hero__text-container {
-  top: 0; }
+  width: 350px;
+  top: 28px; }
+
+.swiper-button-prev {
+  background-color: #000;
+  color: #919b9b; }
+
+.swiper-button-prev::after {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000; }
+
+.swiper-button-next {
+  background-color: #000;
+  color: #919b9b; }
+
+.swiper-button-next::after {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 5px;
+  background-color: #000; }
 
 .welcome {
   margin-top: 50px; }
 
 .welcome__title {
+  font-size: 33px;
   margin-bottom: 25px; }
 
 .welcome__subtitle {
@@ -44,14 +68,34 @@
   background-size: cover;
   padding: 80px 0; }
 
+.form__title{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.form__sub-title{
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
 .form__text-input {
-  width: 100%;
+  display: block;
+  width: 75%;
   border-radius: 0px;
   padding: 9px;
   color: #919b9b;
   font-size: 12px;
+  margin: 0 auto;
   margin-bottom: 10px;
   border: 0; }
+
+.form__button{
+  display: block;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+}
 
 .introduction {
   margin-top: 50px;
@@ -91,7 +135,8 @@
   margin-bottom: 30px; }
 
 .assets {
-  margin-top: 50px; }
+  margin-top: 50px;
+  overflow: hidden; }
 
 .asset {
   height: auto; }
@@ -111,50 +156,57 @@
 .asset__text {
   text-align: center; }
 
-.swiper-button-prev {
-  background-color: #000;
-  color: #919b9b; }
+.logos {
+  background-color: #313131;
+  padding-top: 30px;
+  margin-top: 50px; }
 
-.swiper-button-prev::after {
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-  background-color: #000; }
+.logos__container {
+  width: 100%;
+  padding-top: 30px; }
 
-.swiper-button-next {
-  background-color: #000;
-  color: #919b9b; }
+.logos__title {
+  color: #f7f7f7;
+  text-align: left; }
 
-.swiper-button-next::after {
-  font-size: 25px;
-  font-weight: 600;
-  padding: 5px;
-  background-color: #000; }
+.logo {
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
+.bbFooter {
+  margin-top: 2px !important; }
 
 @media (min-width: 576px) {
   .hero__text-container {
-    width: 350px;
+    width: 450px;
     margin: 0;
     top: 35px;
-    left: 70px; }
+    left: 110px; }
   #slide2 {
-    background-position: center; }
+    background-position: top; }
+  #slide3 .hero__text-container {
+    left: 25%; }
   .form {
-    padding: 50px 80px; } }
+    padding: 50px 80px; }
+  .logos__container {
+    padding-top: 50px; } }
 
 @media (min-width: 768px) {
   .hero {
-    height: 100vh; }
+    height: 100vh;
+    min-height: 650px; }
   .hero__text-container {
-    padding: 25px; }
+    width: 325px;
+    padding: 0; }
   #slide1 .hero__text-container {
-    top: 135px;
-    left: 350px; }
+    top: 185px;
+    left: 58%; }
   #slide2 .hero__text-container {
-    top: 135px; }
+    top: 185px;
+    left: 350px; }
   #slide3 .hero__text-container {
-    top: 135px;
-    left: 15px; }
+    top: 185px;
+    left: 55%; }
   .welcome {
     margin-top: 70px; }
   .welcome__title {
@@ -173,7 +225,9 @@
   .numbers__title {
     margin-bottom: 30px; }
   .form {
-    padding: 100px 0; } }
+    padding: 40px 0; }
+  .logos {
+    margin-top: 70px; } }
 
 @media (min-width: 992px) {
   .hero__text-top {
@@ -184,14 +238,14 @@
     font-size: 16px;
     line-height: 20px; }
   #slide1 .hero__text-container {
-    left: 500px; }
+      left: 65%; }
   #slide2 .hero__text-container {
     width: 400px;
-    left: 200px; }
+    left: 500px; }
   #slide3 .hero__text-container {
-    left: 300px; }
+    left: 63%; }
   .form {
-    padding: 150px 0; }
+    padding: 60px 0; }
   .introduction__text {
     padding: 0 150px; }
   .asset {
@@ -218,10 +272,11 @@
     font-size: 18px;
     line-height: 25px; }
   #slide1 .hero__text-container {
-    top: 140px;
-    left: 63%; }
+    width: 350px;
+    left: 70%;}
   #slide2 .hero__text-container {
-    left: 50px; }
+    left: 50%; }
   #slide3 .hero__text-container {
-    left: 69%; } }
-
+    left: 66%; }
+  .logo {
+    margin-bottom: 90px; } }

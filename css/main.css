@@ -1467,13 +1467,25 @@ img {
   color: #fff; }
 
 .button--gray {
-  background-color: #919b9b; }
+  background-color: #919b9b;
+  color: #fff;
+  border-radius: 6px; }
 
 .title-line {
   height: 1px;
-  width: 20%;
-  background-color: #000;
+  width: 20%; }
+
+.title-line--center {
   margin: 0 auto; }
+
+.title-line--left {
+  margin: 0; }
+
+.tittle-line--white {
+  background-color: #fff; }
+
+.tittle-line--black {
+  background-color: #000; }
 
 @media (min-width: 768px) {
   h1 {
@@ -1547,6 +1559,10 @@ img {
   .cbtHeader__navList-container-small li {
     margin: 30px 0; }
 
+  .cbtHeader__navList-container-small li a{
+    font-weight: normal;
+  }
+
 .cbtHeader__menu-container {
   display: none; }
 
@@ -1578,6 +1594,9 @@ img {
     padding: 3px 4%;
     color: #e0e0e0;
     list-style: none; } }
+    .cbtHeader__navList-container li a{
+      font-weight: normal;
+    }
 
 @media (min-width: 992px) {
   .cbtHeader__navList-container {
@@ -1611,9 +1630,8 @@ img {
   cursor: pointer; }
 
 .cbtSmallMenu__bar {
-  height: 4px;
-  width: 40px;
-  border-radius: 5px;
+  height: 3px;
+  border-radius: 12px;
   background-color: #919b9b;
   margin: 9px 0; }
 
@@ -1626,8 +1644,8 @@ img {
   margin-right: 10px; }
 
 .cbtSmallMenu__bar:nth-child(3) {
-  width: 100%;
-  margin-right: 5px; }
+  width: 38;
+  margin-left: 7px; }
 
 .cbtSmallMenu__close {
   position: absolute;
@@ -1663,8 +1681,12 @@ img {
 
 .bbFooter {
   background-color: #191919;
-  padding: 30px 0;
+  padding-bottom: 60px;
   margin-top: 50px; }
+
+.bbFooter p{
+  font-size: 12px;
+}
 
 .bbFooter__title {
   color: #fff;
@@ -1678,7 +1700,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px 40px;
+  padding: 20px 45px;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
@@ -1687,15 +1709,30 @@ img {
   height: 35px;
   cursor: pointer; }
 
+
 @media (min-width: 768px) {
   .bbFooter__social {
-    padding: 35px 0; } }
+    padding: 20px 0; } }
 
 @media (min-width: 992px) {
   .bbFooter__social {
-    padding: 35px 10px; } }
+    padding: 20px 10px; } }
 
 @media (min-width: 1200px) {
   .bbFooter__social {
-    padding: 35px 30px; } }
+    padding: 20px 30px; } }
 
+.legal{
+  text-align: center;
+  color: #a2a2a2!important;
+  margin-top: 30px;
+}
+
+.legal p{
+  font-size: 12px;
+}
+
+.legal a{
+  color: #a2a2a2!important;
+  font-size: 10px;
+}

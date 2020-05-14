@@ -1516,6 +1516,8 @@ img {
   overflow: hidden; }
 
 .cbtHeader__logo-container {
+  width: 100%;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1525,21 +1527,31 @@ img {
           flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  align-items: center;}
 
 .cbtHeader__logo-text {
+  width: 150px;
   font-family: "Lato", sans-serif;
   color: #919b9b;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  font-size: 16px; }
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
 
 .custom-logo {
-  height: 25px !important;
-  width: 125px !important;
+  /*height: 25px !important;*/
+  width: 80px !important;
   margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px; }
+  /*margin-top: 42px;*/
+}
+
+.custom-logo-link{
+  width: 150px;
+}
 
 .cbtHeader__menu-container-small {
   position: fixed;
@@ -1577,7 +1589,9 @@ img {
     z-index: 2; }
   .cbtHeader__logo-container {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px 0; }
+    width: 100%;
+    margin: 0;
+  }
   .cbtHeader__menu-container-small {
     display: none; }
   .cbtHeader__navList-container-small {
@@ -1585,6 +1599,9 @@ img {
   .cbtHeader__menu-container {
     display: block;
     background-color: rgba(10, 10, 10, 0.7); }
+  .cbtHeader__menu-container ul{
+    padding: 0;
+    margin: 0;}
   .cbtHeader__navList-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1610,7 +1627,7 @@ img {
   background-color: #000;
   padding: 10px;
   position: fixed;
-  right: 10px;
+  left: 10px;
   bottom: 10px;
   z-index: 3;
   cursor: pointer;
@@ -1688,6 +1705,14 @@ img {
   font-size: 12px;
 }
 
+.bbFooter a{
+  color: #a2a2a2;
+}
+
+.bbFooter a:visited{
+  color: #a2a2a2;
+}
+
 .bbFooter__title {
   color: #fff;
   margin-top: 35px; }
@@ -1735,4 +1760,28 @@ img {
 .legal a{
   color: #a2a2a2!important;
   font-size: 10px;
+}
+
+.lang_swithcer{
+  position: absolute;
+  top: 55px;
+  right: 45px;
+}
+
+.lang_swithcer li{
+  list-style: none;
+}
+
+.lang_swithcer li a{
+  color: #fff;
+}
+
+.lang_swithcer li img{
+  float: left;
+  margin-top: 5px;
+}
+
+.lang_swithcer li span{
+  float: left;
+  font-size: 0.8rem;
 }

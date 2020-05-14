@@ -1,9 +1,11 @@
 .yacht__type {
+  font-size: 18px;
   text-transform: uppercase;
   text-align: left;
   color: #313131; }
 
 .yacht__name {
+  font-size: 28px;
   text-align: left;
   padding: 0;
   padding-bottom: 20px;
@@ -37,6 +39,8 @@
   font-size: 30px; }
 
 .yacht__details {
+  max-width: 470px;
+  margin: 0 auto;
   background-color: #313131;
   padding: 30px;
   padding-left: 40px; }
@@ -52,14 +56,22 @@
 
 .yacht__detail-header {
   font-family: "Playfair Display", serif;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 28px;
   padding-right: 7px; }
 
 .yacht__detail-data {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   padding-left: 7px; }
+
+.yacht__slider-container{
+  margin-top: 40px;
+}
+
+.bbFooter{
+  margin-top: 0;
+}
 
 td {
   padding: 0 8px; }

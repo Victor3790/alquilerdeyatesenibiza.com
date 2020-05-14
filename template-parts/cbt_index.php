@@ -10,7 +10,7 @@
         <p class="hero__text-header">SIN INTERMEDIARIOS</p>
         <a href="<?php the_field('alquiler_yates'); ?>">
           <div class="button button--black">
-            <p>Leer más</p>
+            <p>Read more</p>
           </div>
         </a>
       </div>
@@ -40,6 +40,9 @@
       <div class="hero__text-container">
         <p class="hero__text-header">
           LUXURY YACHTING EXPERTS
+        </p>
+        <p class="hero__text">
+          YACHTING SINCE 1991
         </p>
       </div>
     </div>
@@ -83,13 +86,13 @@
             Nuestros yates están equipados con tripulaciones profesionales altamente
             cualificadas y un equipo que les complacerá en todo momento durante su estancia a bordo.
             Además de la actividad de alquiler de yates en Ibiza, ofrecemos servicios
-            de brokerage relacionados con compraventa yates y barcos de lujo en Ibiza
-            procedentes de nuestra flota embarcaciones, así como la construcción, venta
+            de brokerage relacionados con compraventa de yates y barcos de lujo en Ibiza
+            procedentes de nuestra flota de embarcaciones, así como la construcción, venta
             de yates, alquiler de yates en Ibiza y la contratación de tripulaciones
-            profesionales nativas de la isla de Ibiza. Alquilamos nuestra flota propia
+            profesionales nativas de la isla de Ibiza. Alquilamos nuestra flota
             de yates y barcos a los mejores precios, SIN INTERMEDIARIOS, consulte nuestras
-            ofertas de alquiler de yates en Ibiza, Formentera, Mallorca, Menorca a los
-            mejores precios. Alquiler de yates en Ibiza S.L., está asociado a (M.Y.B.A.),
+            ofertas de alquiler de yates en Ibiza, Formentera, Mallorca, Menorca y demás destinos a los
+            mejores precios. Alquiler de yates en Ibiza S.L., está asociado a International Yachting Associations,
             a fin de poder garantizar toda la seguridad, calidad y confidencialidad durante
             su estancia a bordo.
           </p>
@@ -112,7 +115,7 @@
         <div id="scene1" class="numbers__item">
           <p class="numbers__item-top">Más de</p>
           <div class="numbers__item-number">
-            <div id="odometer1" class="odometer">10</div>
+            <div id="odometer1" class="odometer">0</div><div class="odometer">0</div><div class="odometer">0</div>
           </div>
           <h4 class="numbers__item-text">yates gestionados</h4>
         </div>
@@ -121,7 +124,7 @@
         <div id="scene2" class="numbers__item">
           <p class="numbers__item-top">Más de</p>
           <div class="numbers__item-number">
-            <div id="odometer2" class="odometer">100</div>
+            <div id="odometer2" class="odometer">0</div><div id="odometer21" class="odometer">0</div><div class="odometer">0</div><div class="odometer">0</div>
           </div>
           <h4 class="numbers__item-text">clientes satisfechos</h4>
         </div>
@@ -130,12 +133,29 @@
         <div id="scene3" class="numbers__item">
           <p class="numbers__item-top">Más de</p>
           <div class="numbers__item-number">
-            <div id="odometer3" class="odometer">10</div>
+            <div id="odometer3" class="odometer">1</div><div id="odometer31" class="odometer">0</div>
           </div>
           <h4 class="numbers__item-text">años de experiencia</h4>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="main-yachts">
+  <h2 class="main-yachts__title">Nuestros barcos</h2>
+  <div class="container">
+    <div class="row">
+      <?php
+          echo do_shortcode('[ic_add_posts post_type="yate" ids="1332,1346,1360" showposts="3"]');
+          //echo do_shortcode('[ic_add_posts post_type="yate" ids="187,189,201" showposts="3"]');
+      ?>
+    </div>
+  </div>
+  <div class="yacht__button" style="position:static; width:250px;">
+    <a href="https://alquilerdeyatesenibiza.com/yate/">
+      <p>Ver todos</p>
+    </a>
   </div>
 </div>
 
@@ -181,7 +201,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h4 class="logos__title">Marcas con las que trabajamos</h4>
+        <h4 class="logos__title">Algunas marcas con las que trabajamos</h4>
         <div class="title-line title-line--left tittle-line--white"></div>
       </div>
       <div class="container logos__container">

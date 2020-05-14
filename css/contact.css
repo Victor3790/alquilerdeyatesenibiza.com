@@ -1,0 +1,53 @@
+.contacto__container{
+  padding: 5% 20% 7% 20%;
+}
+
+.contacto__subtitle{
+  margin: 0!important;
+  margin-bottom: 28px!important;
+}
+
+.contacto__intro{
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.contacto__text{
+  text-align: justify;
+  line-height: 22px;
+}
+
+.contacto__gray-title{
+  font-size: 19px;
+  margin: 0!important;
+  margin-bottom: 10px!important;
+}
+
+.contacto__gray-container{
+  background-color: #f7f7f7;
+  padding: 60px 0;
+}
+
+.contacto__gray-text{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.contacto__gray-phone{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contacto__phone-mail{
+  font-size: 15px;
+  color: #919b9b;
+  font-weight: 400;
+}
+
+.contacto__map{
+  width: 100%;
+  height: 500px;
+}

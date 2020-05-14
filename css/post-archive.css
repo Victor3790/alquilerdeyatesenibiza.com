@@ -1,0 +1,38 @@
+a{
+  color: #000;
+}
+
+a:hover{
+  color: #000;
+}
+
+.post-title{
+  text-align: left;
+  font-size: 20px;
+  margin: 5px 0!important;
+}
+
+.read-more{
+  width: 100px;
+  height: 30px;
+  background-color: #919b9b;
+  border-radius: 6px;
+  display: block;
+  position: static;
+  border: 0;
+}
+
+.read-more p{
+  text-align: center;
+  color: #fff;
+}
+
+.post-info{
+  margin: 0;
+  float: left;
+  font-size: 13px;
+}
+
+.post-info-container{
+  margin-top: 10px;
+}

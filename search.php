@@ -1,55 +1,61 @@
 <?php
 /**
- * The template for displaying search results pages
+ * The main template file
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Custom_Base_Theme
  */
 
 get_header();
 ?>
+	<style media="screen">
+		@media  (min-width: 768px){
+			.content-area{
+				margin-top: 160px;
+			}
+		}
+	</style>
+	<div id="primary" class="content-area content">
+		<main id="main" class="site-main container">
+			<div class="row">
+				<?php
+				if ( have_posts() ) :
+					/* Start the Loop */
+					while ( have_posts() ) :
+						the_post();
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+						/*
+						 * Include the Post-Type-specific template for the content.
+						 * If you want to override this in a child theme, then include a file
+						 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+						 */
+						get_template_part( 'template-parts/cbt_result_posts' );
 
-		<?php if ( have_posts() ) : ?>
+					endwhile;
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'cbt' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
 
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+				else :
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
+					get_template_part( 'template-parts/content', 'none' );
 
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
+				endif;
+				?>
+			</div>
+			<div class="cbt_pagination">
+				<?php
+				echo paginate_links(array(
+															'prev_next' => false
+														));
+				?>
+			</div>
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();

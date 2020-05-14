@@ -184,3 +184,96 @@ msgstr ""
 msgctxt "list item separator"
 msgid ", "
 msgstr ""
+
+
+#: footer.php
+msgid "Contact us"
+msgstr "Contacto"
+
+msgid "Business hours"
+msgstr "Horario"
+
+msgid "Monday to Friday"
+msgstr "Lunes a Viernes"
+
+msgid "Saturday"
+msgstr "Sábado"
+
+msgid "Spain"
+msgstr "España"
+
+msgid "Call us"
+msgstr "Llámenos"
+
+msgid "Write to us"
+msgstr "Escríbanos"
+
+msgid "Company recorded in the Business Register of Barcelona (Spain)"
+msgstr "Empresa registrada en el Registro Mercantil"
+
+msgid "All Rights reserved"
+msgstr "Todos los derechos reservados"
+
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+msgid "Terms of use"
+msgstr "Términos y condiciones"
+
+msgid "Careers"
+msgstr "Trabaje con nosotros"
+
+#: template parts / cbt_yacht_search_form.php
+
+msgid "Yacht search"
+msgstr "Buscador de barcos"
+
+msgid "Yacht type"
+msgstr "Tipo de barco"
+
+msgid "Motor"
+msgstr "Motor"
+
+msgid "Sail"
+msgstr "Vela"
+
+msgid "Both"
+msgstr "Ambos"
+
+msgid "Number of cabins"
+msgstr "Número de camarotes"
+
+msgid "By length"
+msgstr "Por eslora"
+
+msgid "By price"
+msgstr "Por precio"
+
+msgid "or more"
+msgstr "o más"
+
+#: template parts / cbt_result_yacht.php
+
+msgid "Motor Yacht"
+msgstr "Yate a motor"
+
+msgid "L.O.A"
+msgstr "Eslora"
+
+msgid "Beam"
+msgstr "Manga"
+
+msgid "Passengers"
+msgstr "Pasajeros"
+
+msgid "Year"
+msgstr "Año"
+
+msgid "View more"
+msgstr "Ver más"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "ENQUIRE"
+msgstr "CONSULTAR"

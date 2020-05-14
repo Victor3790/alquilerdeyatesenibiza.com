@@ -16,9 +16,7 @@ function cbt_index_styles(){
     background: #fff url("<?php echo $cbt_uri; ?>/imgs/slide3Small.jpg") top;
     background-size: cover;
   }
-  .form{
-    background: #fff url("<?php echo $cbt_uri; ?>/imgs/form-backgroundSmall.jpg") center;
-  }
+
   #asset__image1{
     background-image: url("<?php echo $cbt_uri; ?>/imgs/asset1Small.jpg");
   }
@@ -102,9 +100,7 @@ function cbt_index_styles(){
     #slide3{
       background-image: url("<?php echo $cbt_uri; ?>/imgs/slide3.jpg");
     }
-    .form{
-      background-image: url("<?php echo $cbt_uri; ?>/imgs/form-background.jpg");
-    }
+
     #asset__image1{
       background-image: url("<?php echo $cbt_uri; ?>/imgs/asset1.jpg");
     }

@@ -1,0 +1,88 @@
+.cbt-form__title{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.cbt-form__sub-title{
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cbt-form__text-input {
+  position: relative;
+  width: 95%;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 0px;
+  color: #404040;
+  font-size: 14px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.cbt-form__title-input{
+  width: 80%;
+  height: 35px;
+  float: left;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+
+.cbt-form__display{
+  width: 20%;
+  height: 35px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #e3e3e3;
+  cursor: pointer;
+}
+
+.cbt-form__display-arrow{
+  width: 25px;
+  display: block;
+}
+
+.cbt-form__options {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  top: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.cbt-form__option {
+  padding: 5px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cbt-form__option:hover{
+  background-color: #5c5c5c;
+  color: #fff;
+}
+
+.cbt-form__button{
+  padding: 5px 100px;
+  display: block;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px){
+  .cbt-form__text-input {
+    width: 80%;
+  }
+}

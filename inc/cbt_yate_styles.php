@@ -3,7 +3,7 @@ function cbt_yate_styles(){
   global $post;
   if(is_singular('yate')){
     //Get the header image background in differente sizes.
-    $cbt_bg_large                   = get_the_post_thumbnail_url($post->ID, 'cbt_large');
+    $cbt_bg_large                   = get_the_post_thumbnail_url($post->ID, 'cbt_large_yacht');
     $cbt_bg_small                   = get_the_post_thumbnail_url($post->ID, 'cbt_small');
     $cbt_bg_small_retina            = get_the_post_thumbnail_url($post->ID, 'cbt_small_retina');
     $cbt_bg_small_landscape         = get_the_post_thumbnail_url($post->ID, 'cbt_small_landscape');
@@ -26,7 +26,7 @@ function cbt_yate_styles(){
     }
   }
 
-  @media  (max-width: 768px) and (orientation: landscape) {
+  @media  (max-width: 767px) and (orientation: landscape) {
     .pageHeader{
       background-image: url("<?php echo $cbt_bg_small_landscape; ?>");
       height: 300px;

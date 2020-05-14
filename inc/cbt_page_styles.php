@@ -26,7 +26,7 @@ function cbt_page_styles(){
     }
   }
 
-  @media  (max-width: 768px) and (orientation: landscape) {
+  @media  (max-width: 767px) and (orientation: landscape) {
     .pageHeader{
       background-image: url("<?php echo $cbt_bg_small_landscape; ?>");
       height: 300px;

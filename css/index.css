@@ -8,50 +8,50 @@
   margin: 0 auto;
   position: relative; }
   .hero__text-container .button {
-    width: 80px; }
+    width: 85px; }
 
 .hero__text-header {
-  font-size: 20px!important;
+  font-size: 20px;
   font-family: "Playfair Display", serif;
   text-align: center;
   font-weight: 500;
   line-height: 30px; }
 
 .hero__text {
-  font-size: 16px!important;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 23px;
   font-weight: 500;
   text-align: center; }
 
 #slide1 .hero__text-container {
-  top: 20px; }
+  top: 30px; }
 
 #slide2 .hero__text-container {
-  top: 20px; }
+  top: 30px; }
 
 #slide3 .hero__text-container {
   width: 350px;
-  top: 28px; }
+  top: 30px; }
 
 .swiper-button-prev {
-  background-color: #000;
+  /*background-color: rgba(0,0,0,0.4);*/
   color: #919b9b; }
 
 .swiper-button-prev::after {
   font-size: 25px;
   font-weight: 600;
   padding: 5px;
-  background-color: #000; }
+  background-color: transparent; }
 
 .swiper-button-next {
-  background-color: #000;
+  /*background-color: #000;*/
   color: #919b9b; }
 
 .swiper-button-next::after {
   font-size: 25px;
   font-weight: 600;
   padding: 5px;
-  background-color: #000; }
+  background-color: transparent; }
 
 .welcome {
   margin-top: 50px; }
@@ -62,40 +62,6 @@
 
 .welcome__subtitle {
   margin-bottom: 20px; }
-
-.form {
-  background-position: center;
-  background-size: cover;
-  padding: 80px 0; }
-
-.form__title{
-  color: #fff;
-  margin-bottom: 30px;
-}
-
-.form__sub-title{
-  color: #fff;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.form__text-input {
-  display: block;
-  width: 75%;
-  border-radius: 0px;
-  padding: 9px;
-  color: #919b9b;
-  font-size: 12px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  border: 0; }
-
-.form__button{
-  display: block;
-  border: 0;
-  margin: 0 auto;
-  margin-top: 30px;
-}
 
 .introduction {
   margin-top: 50px;
@@ -133,6 +99,14 @@
 
 .numbers__item-text {
   margin-bottom: 30px; }
+
+.main-yachts{
+  padding: 60px 0;
+}
+
+.main-yachts__title{
+  margin-bottom: 30px;
+}
 
 .assets {
   margin-top: 50px;
@@ -177,14 +151,21 @@
   margin-top: 2px !important; }
 
 @media (min-width: 576px) {
+  .hero__text-header {
+    font-size: 25px;}
   .hero__text-container {
     width: 450px;
     margin: 0;
     top: 35px;
     left: 110px; }
+  #slide1 .hero__text-container {
+    top: 35px;
+    left: 18px;
+  }
   #slide2 {
     background-position: top; }
   #slide3 .hero__text-container {
+    top: 38px;
     left: 25%; }
   .form {
     padding: 50px 80px; }
@@ -199,13 +180,13 @@
     width: 325px;
     padding: 0; }
   #slide1 .hero__text-container {
-    top: 185px;
-    left: 58%; }
+    top: 240px;
+    left: 100px; }
   #slide2 .hero__text-container {
     top: 185px;
     left: 350px; }
   #slide3 .hero__text-container {
-    top: 185px;
+    top: 230px;
     left: 55%; }
   .welcome {
     margin-top: 70px; }
@@ -233,12 +214,12 @@
   .hero__text-top {
     font-size: 16px; }
   .hero__text-header {
-    font-size: 28px; }
+    font-size: 30px; }
   .hero__text {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px; }
   #slide1 .hero__text-container {
-      left: 65%; }
+      left: 100px; }
   #slide2 .hero__text-container {
     width: 400px;
     left: 500px; }
@@ -273,7 +254,7 @@
     line-height: 25px; }
   #slide1 .hero__text-container {
     width: 350px;
-    left: 70%;}
+    left: 100px/*70%*/;}
   #slide2 .hero__text-container {
     left: 50%; }
   #slide3 .hero__text-container {

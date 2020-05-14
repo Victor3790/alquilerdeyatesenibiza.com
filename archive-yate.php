@@ -14,11 +14,20 @@
 
 get_header();
 ?>
-
+	<style media="screen">
+		@media  (min-width: 768px){
+			.content-area{
+				margin-top: 160px;
+			}
+		}
+	</style>
 	<div id="primary" class="content-area content">
 		<main id="main" class="site-main container">
 			<div class="row">
 				<?php
+				global $wp_query;
+				var_dump($wp_query->query_vars);
+				
 				if ( have_posts() ) :
 					/* Start the Loop */
 					while ( have_posts() ) :
@@ -33,7 +42,6 @@ get_header();
 
 					endwhile;
 
-					the_posts_navigation();
 
 				else :
 
@@ -42,7 +50,16 @@ get_header();
 				endif;
 				?>
 			</div>
+			<div class="cbt_pagination">
+				<?php
+				echo paginate_links(array(
+															'prev_next' => false
+														));
+				?>
+			</div>
 		</main><!-- #main -->
+
+		<?php get_template_part( 'template-parts/cbt_yacht_search_form' ); ?>
 	</div><!-- #primary -->
 
 <?php

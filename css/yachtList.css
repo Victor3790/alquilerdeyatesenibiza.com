@@ -1,14 +1,21 @@
 .yacht {
+  width: 97%;
+  margin: 0 auto;
   padding: 30px 0; }
 
 .yacht__type {
+  font-size: 18px;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10px; }
 
 .yacht__name {
-  text-transform: capitalize;
+  width: 70%;
+  font-size: 23px;
   text-align: left;
+  padding: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
   margin-bottom: 30px; }
 
 .yacht__picture {
@@ -35,36 +42,58 @@
 
 .yacht__detail-header {
   font-family: "Playfair Display", serif;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 28px;
   padding-right: 7px; }
 
 .yacht__detail-data {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 28px;
   padding-left: 7px; }
 
 .yacht__button {
-  width: 150px;
+  background-color: #919b9b;
+  padding: 5px 10px;
+  width: 55%;
   position: relative;
-  bottom: 18px;
+  top: -40px;
   margin: 0 auto; }
   .yacht__button p {
+    margin: 0;
+    text-align: center;
     font-size: 18px;
     font-weight: 400; }
   .yacht__button a{
     color: #fff;
   }
 
+  .yacht__price{
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+
+  .yacht__price-title{
+    float: left;
+    padding: 0 5px;
+  }
+
+  .yacht__price-text{
+    float: left;
+    padding: 0 5px;
+    font-weight: 600;
+  }
+
+  .bbFooter{
+    margin-top: 0;
+  }
+
 @media (min-width: 768px) {
+  /*.site-content{
+    margin-top: 175px;
+  }*/
+
   .yacht__picture{
       height: 200px;
   }
-  .yacht__container:nth-child(1) {
-    margin-top: 200px; }
-  .yacht__container:nth-child(2) {
-    margin-top: 200px; } }
-
-@media (min-width: 1200px) {
-  .yacht__container:nth-child(3) {
-    margin-top: 200px; } }
+ }

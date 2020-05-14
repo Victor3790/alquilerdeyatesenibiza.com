@@ -1,0 +1,20 @@
+.cbt_pagination{
+  width: 100%;
+  margin: 0 auto;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.page-numbers{
+  font-size: 24px;
+  color: #919b9b;
+}
+
+.page-numbers:hover{
+  color: #919b9b;
+}
+
+.page-numbers:visited{
+  color: #919b9b;
+}

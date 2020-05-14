@@ -50,6 +50,10 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
+		<div class="lang_swithcer">
+			<?php echo do_shortcode('[polylang]'); ?>
+		</div>
+
 		<nav id="site-navigation" class="main-navigation cbtHeader__menu-container">
 			<?php
 			wp_nav_menu( array(

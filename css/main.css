@@ -1764,8 +1764,8 @@ img {
 
 .lang_swithcer{
   position: absolute;
-  top: 55px;
-  right: 45px;
+  top: 70px;
+  right: 10px;
 }
 
 .lang_swithcer li{
@@ -1784,4 +1784,11 @@ img {
 .lang_swithcer li span{
   float: left;
   font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .lang_swithcer{
+    top: 55px;
+    right: 45px;
+  }
 }

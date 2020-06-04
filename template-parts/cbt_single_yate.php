@@ -33,13 +33,13 @@
             </div>
             <div class="row">
               <div class="col-4">
-                <h5 class="yacht__guests-title">Invitados</h5>
+                <h5 class="yacht__guests-title"><?php _e('Guests', 'cbt'); ?></h5>
               </div>
               <div class="col-4">
-                <h5 class="yacht__cabins-title">Camarotes</h5>
+                <h5 class="yacht__cabins-title"><?php _e('Cabins', 'cbt'); ?></h5>
               </div>
               <div class="col-4">
-                <h5 class="yacht__crew-title">Año</h5>
+                <h5 class="yacht__crew-title"><?php _e('Year', 'cbt'); ?></h5>
               </div>
             </div>
             <div class="row">
@@ -61,7 +61,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-4">
-          <h2>Especificaciones</h2>
+          <h2><?php _e('Specifications', 'cbt'); ?></h2>
           <div class="yacht__details">
             <table>
 							<?php
@@ -69,8 +69,8 @@
 										<?php foreach ($fields as $field) : ?>
 											<?php if($field['value'] && !is_array($field['value']) && !is_numeric($field['value'])) : ?>
 												<tr class="yacht__detail">
-													<th class="yacht__detail-header"><?php echo $field['label'] ?></th>
-													<td class="yacht__detail-data"><?php echo $field['value']; ?></td>
+													<th class="yacht__detail-header"><?php _e ($field['label'], 'cbt' )?></th>
+													<td class="yacht__detail-data"><?php _e ($field['value'], 'cbt'); ?></td>
 												</tr>
 											<?php endif; ?>
 										<?php endforeach; ?>
@@ -96,40 +96,48 @@
 						<div>
 							<p>
 								<i>
-									Nota: La descripción de todos los yates, veleros y barcos de lujo,
-									ha sido revisada con anterioridad y facilitada al cliente de buena fe.
-									Se suponen correctas pero no se pueden garantizar, ya que pueden contener
-									alguna errata en sus especificaciones.
+									<?php
+									 	_e('Note: The descriptions of all yachts, sails and ships have been previously revised and published in good faith. ', 'cbt');
+										_e('They are supposed to be right but can not be guaranteed because there may be errors in the specifications.', 'cbt')
+									?>
 								</i>
 							</p>
 							<p>
 								<i>
-									Alquiler de Yates en Ibiza & Barcos Barcelona S.L., no garantizan
-									ni asumen ninguna obligación legal ni responsabilidad por la exactitud,
-									integridad o utilidad de cualquier imagen o información descrita
-									en nuestro sitio web. Los precios y detalles de la embarcación pueden
-									variar según la temporada de alquiler y estos se especificarán debidamente
-									en su contrato de chárter.
+									<?php
+										_e('Alquiler de Yates en Ibiza & Barcos Barcelona S.L., does not guarantee ', 'cbt');
+										_e('nor do we assume any legal obligation for the exactness, ', 'cbt');
+										_e('integrity or utility of any image or information published ', 'cbt');
+										_e('in our web. The prices and details of the ship may vary ', 'cbt');
+										_e('depending on the season and these features will be specified ', 'cbt');
+										_e('in your charter contract.', 'cbt');
+									?>
 								</i>
 							</p>
 							<p>
 								<i>
-									Algunos de los barcos y veleros de lujo que se detallan en el sitio
-									web pueden tener un costo adicional de posicionamiento y posterior
-									reposicionamiento de la embarcación en el puerto o zona de navegación
-									solicitada.
+									<?php
+										_e('Some of the luxury ships and sails detailed in this web site ', 'cbt');
+										_e('may have an extra charge for positioning ', 'cbt');
+										_e('and later re positioning of the ship ', 'cbt');
+										_e('at the required port of sailing zone.', 'cbt');
+									?>
 								</i>
 							</p>
 						</div>
 						<div class="yacht__form-container">
-							<h3>Preguntas o sugerencias</h3>
+							<h3><?php _e('Questions or suggestions', 'cbt'); ?></h3>
 							<p>
-								No dude en contactarnos para más información a través
-								del formulario de contacto o al teléfono
+								<?php
+									_e('Do not hesitate to contact us for further information ', 'cbt');
+									_e('through the contact form or the phone ', 'cbt');
+								?>
 								<a class="phone" href="tel:0034 620 26 90 20">0034 620 26 90 20</a>
-								y le atenderemos a la mayor brevedad.
+								<?php
+									_e(', we will answer as soon as possible.', 'cbt');
+								?>
 							</p>
-							<?php echo do_shortcode('[contact-form-7 title="yate contact form"]'); ?>
+							<?php echo do_shortcode('[cf7form cf7key="yate-contact-form"]'); ?>
 						</div>
 					</div>
 				</div>

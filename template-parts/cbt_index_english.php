@@ -2,48 +2,17 @@
   <div class="swiper-wrapper">
 
   <div class="swiper-slide">
-    <div id="slide1" class="hero">
-      <div class="hero__text-container">
-        <p class="hero__text-header">
-          Yacht charter in Ibiza
-        </p>
-        <p class="hero__text-header">WITHOUT INTERMEDIARIES</p>
-        <a href="<?php the_field('alquiler_yates'); ?>">
-          <div class="button button--black">
-            <p>Read more</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
     <div id="slide2" class="hero">
       <div class="hero__text-container">
         <p class="hero__text-header">
           Luxury Yacht charter in Ibiza
         </p>
-        <p class="hero__text">
-          All the nautical offer at your fingertips, in a single process and with no additional costs
-        </p>
+        <p class="hero__text">WITHOUT INTERMEDIARIES</p>
         <a href="<?php the_field('yates_lujo'); ?>">
           <div class="button button--black">
             <p>Read more</p>
           </div>
         </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div id="slide3" class="hero">
-      <div class="hero__text-container">
-        <p class="hero__text-header">
-          LUXURY YACHTING EXPERTS
-        </p>
-        <p class="hero__text">
-          YACHTING SINCE 1991
-        </p>
       </div>
     </div>
   </div>
@@ -73,7 +42,7 @@
     <div class="row">
       <div class="col">
         <h2 class="introduction__title">Yacht charter</h2>
-        <h4 class="introduction__subtitle">Yacht charter in Ibiza without intermediaries</h4>
+        <h4 class="introduction__subtitle">Yacht charter in Ibiza WITHOUT INTERMEDIARIES</h4>
         <div class="introduction__text">
           <p>
             Alquiler de Yates en Ibiza S.L. – Ibiza Yachting Group, offers you a careful

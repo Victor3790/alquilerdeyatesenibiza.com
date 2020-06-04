@@ -49,7 +49,7 @@
 									<a href="https://www.facebook.com/alquilerdeyatesenibiza" target="_blank">
 										<img class="bbFooter__social-icon" src="<?php echo get_template_directory_uri(); ?>/imgs/facebook.png" alt="alquiler de yates en ibiza - Facebook">
 									</a>
-									<a href="https://www.instagram.com/ibiza_yachting/" target="_blank">
+									<a href="https://www.instagram.com/ibiza_yachting_group_/" target="_blank">
 										<img class="bbFooter__social-icon" src="<?php echo get_template_directory_uri(); ?>/imgs/instagram.png" alt="alquiler de yates en ibiza - Instagram">
 									</a>
 									<a href="https://www.pinterest.com/ibizayachting/pins/" target="_blank">

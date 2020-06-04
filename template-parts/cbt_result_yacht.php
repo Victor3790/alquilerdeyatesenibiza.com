@@ -16,7 +16,7 @@
     <div class="yacht__details">
       <table>
         <tr class="yacht__detail">
-          <th class="yacht__detail-header"><?php _e( 'L.O.A', 'cbt' ); ?></th>
+          <th class="yacht__detail-header"><?php _e( 'Length', 'cbt' ); ?></th>
           <td class="yacht__detail-data"><?php the_field('eslora'); ?></td>
         </tr>
         <tr class="yacht__detail">

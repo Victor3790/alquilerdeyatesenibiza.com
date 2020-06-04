@@ -2,48 +2,17 @@
   <div class="swiper-wrapper">
 
   <div class="swiper-slide">
-    <div id="slide1" class="hero">
+    <div id="slide2" class="hero">
       <div class="hero__text-container">
         <p class="hero__text-header">
           Alquiler de yates en Ibiza
         </p>
-        <p class="hero__text-header">SIN INTERMEDIARIOS</p>
-        <a href="<?php the_field('alquiler_yates'); ?>">
-          <div class="button button--black">
-            <p>Read more</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div id="slide2" class="hero">
-      <div class="hero__text-container">
-        <p class="hero__text-header">
-          Alquiler de yates de lujo
-        </p>
-        <p class="hero__text">
-          Toda la oferta náutica a su alcance en una sola gestión y sin costes adicionales.
-        </p>
+        <p class="hero__text">SIN INTERMEDIARIOS</p>
         <a href="<?php the_field('yates_lujo'); ?>">
           <div class="button button--black">
             <p>Leer más</p>
           </div>
         </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-slide">
-    <div id="slide3" class="hero">
-      <div class="hero__text-container">
-        <p class="hero__text-header">
-          LUXURY YACHTING EXPERTS
-        </p>
-        <p class="hero__text">
-          YACHTING SINCE 1991
-        </p>
       </div>
     </div>
   </div>
@@ -73,7 +42,7 @@
     <div class="row">
       <div class="col">
         <h2 class="introduction__title">Alquiler de yates</h2>
-        <h4 class="introduction__subtitle">Alquiler de Yates en Ibiza sin intermediarios</h4>
+        <h4 class="introduction__subtitle">Alquiler de Yates en Ibiza SIN INTERMEDIARIOS</h4>
         <div class="introduction__text">
           <p>
             Alquiler de Yates en Ibiza S.L., ofrece una cuidada selección de

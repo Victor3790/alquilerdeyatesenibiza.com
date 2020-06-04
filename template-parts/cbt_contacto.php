@@ -22,18 +22,19 @@
 			<div class="row">
 				<div class="col">
 					<div class="contacto__container">
-						<h2 class="contacto__subtitle">Contacte con nosotros</h2>
+						<h2 class="contacto__subtitle"><?php _e('Thank you for contacting us', 'cbt'); ?></h2>
 						<div class="title-line title-line--center tittle-line--black"></div>
 						<h5 class="contacto__intro">
-							Empresa de alquiler de yates en Ibiza y el resto del mundo con más de
-							4.000 embarcaciones a su disposición.
+							<?php _e('Yacht charter enterprise in Ibiza and the world ', 'cbt'); ?>
+							<?php _e('with more than 4.000 ships at your disposal.', 'cbt'); ?>
 						</h5>
 						<p class="contacto__text">
-							Bienvenido a Alquiler de Yates en Ibiza, su socio experto en náutica de
-							recreo. Visítenos en nuestras oficinas de lunes a Viernes
-							en el horario de 10:00 a 18:00 horas y los sábados de 10:00 a 14:00
-							horas. Fuera de este horario póngase en contacto con nosotros a través
-							del teléfono <a class="phone" href="tel:0034 620 26 90 20">0034 620 26 90 20</a>
+							<?php _e('Welcome to Alquiler de Yates en Ibiza, your expert partner in nautical leisure. ', 'cbt'); ?>
+							<?php _e('Visit us in our offices from Monday to Friday ', 'cbt'); ?>
+							<?php _e('in our business hours, 10:00 - 18:00, ', 'cbt'); ?>
+							<?php _e('and on Saturdays 10:00 - 14:00. ', 'cbt'); ?>
+							<?php _e('In other hours you can contact us through the phone number ', 'cbt'); ?>
+ 							<a class="phone" href="tel:0034 620 26 90 20">0034 620 26 90 20</a>
 						</p>
 					</div>
 				</div>
@@ -43,21 +44,21 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-6">
-						<h5 class="contacto__gray-title">Nos encontrará</h5>
+						<h5 class="contacto__gray-title"><?php _e('You can find us', 'cbt'); ?></h5>
 						<div class="title-line title-line--center tittle-line--black"></div>
 					</div>
 					<div class="col-12 col-md-6">
 						<p class="contacto__gray-text">
 							Carrer ses Figueres,31, <br>
 							07800 Ibiza, Balearic Islands, <br>
-							España <br>
+							<?php _e('Spain', 'cbt'); ?> <br>
 							<a style="color:#000;" class="contacto__phone-mail" href="mailto:info@alquilerdeyatesenibiza.com">info@alquilerdeyatesenibiza.com</a>
 						</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12 col-md-6">
-						<h5 class="contacto__gray-title">Llamenos</h5>
+						<h5 class="contacto__gray-title"><?php _e('Call us', 'cbt'); ?></h5>
 						<div class="title-line title-line--center tittle-line--black"></div>
 					</div>
 					<div class="col-12 col-md-6">
@@ -72,14 +73,18 @@
 				<div class="col">
 					<div class="yacht__extra-container">
 						<div class="yacht__form-container" style="margin-top:0;">
-							<h3>Preguntas o sugerencias</h3>
+							<h3><?php _e('Questions or suggestions', 'cbt'); ?></h3>
 							<p>
-								No dude en contactarnos para más información a través
-								del formulario de contacto o al teléfono
+								<?php
+									_e('Do not hesitate to contact us for further information ', 'cbt');
+									_e('through the contact form or the phone ', 'cbt');
+								?>
 								<a class="phone" href="tel:0034 620 26 90 20">0034 620 26 90 20</a>
-								y le atenderemos a la mayor brevedad.
+								<?php
+									_e(', we will answer as soon as possible.', 'cbt');
+								?>
 							</p>
-							<?php echo do_shortcode('[contact-form-7 title="yate contact form"]'); ?>
+							<?php echo do_shortcode('[cf7form cf7key="yate-contact-form"]'); ?>
 						</div>
 					</div>
 				</div>

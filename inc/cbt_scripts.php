@@ -27,13 +27,7 @@ function cbt_scripts() {
 
 	if(is_front_page()){
 
-		wp_enqueue_style('cbt-swiper-style', get_template_directory_uri() . '/css/swiper.min.css');
-
 		wp_enqueue_style( 'cbt-index-styles', get_template_directory_uri() . '/css/index.css' );
-
-		wp_enqueue_script('cbt-swiper-script', get_template_directory_uri() . '/js/swiper.min.js', array(), '1.0', false);
-
-		wp_enqueue_script('cbt-index-header-script', get_template_directory_uri() . '/js/index-header.js', array('jquery','cbt-swiper-script'));
 
 		wp_enqueue_script('cbt-scrollMagic', get_template_directory_uri() . '/js/ScrollMagic.min.js', array(), '1.0', true);
 
@@ -92,7 +86,7 @@ function cbt_scripts() {
 		wp_enqueue_script('cbt-form-script', get_template_directory_uri() . '/js/searchForm.js', array('jquery', 'cbt-range-script'), '1.0', true);
 	}
 
-	if(is_page('contacto')){
+	if(is_page('contacto')||is_page('contact')){
 		wp_enqueue_style('cbt-contact-style', get_template_directory_uri() . '/css/contact.css');
 
 		wp_enqueue_style('cbt-contact-form', get_template_directory_uri() . '/css/form.css');

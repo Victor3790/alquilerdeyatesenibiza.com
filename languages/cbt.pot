@@ -237,6 +237,9 @@ msgstr "Motor"
 msgid "Sail"
 msgstr "Vela"
 
+msgid "Sailboat"
+msgstr "Velero"
+
 msgid "Both"
 msgstr "Ambos"
 
@@ -257,7 +260,7 @@ msgstr "o más"
 msgid "Motor Yacht"
 msgstr "Yate a motor"
 
-msgid "L.O.A"
+msgid "Length"
 msgstr "Eslora"
 
 msgid "Beam"
@@ -277,3 +280,109 @@ msgstr "Precio"
 
 msgid "ENQUIRE"
 msgstr "CONSULTAR"
+
+#: template parts / cbt_single_yate.php
+
+msgid "Specifications"
+msgstr "Especificaciones"
+
+msgid "Beam"
+msgstr "Manga"
+
+msgid "Capacity"
+msgstr "Capacidad"
+
+msgid "Bathrooms"
+msgstr "Baños"
+
+msgid "Fuel"
+msgstr "Combustible"
+
+msgid "Cruise speed"
+msgstr "Velocidad de crucero"
+
+msgid "Max. speed"
+msgstr "Velocidad máxima"
+
+msgid "Guests"
+msgstr "Invitados"
+
+msgid "Cabins"
+msgstr "Camarotes"
+
+msgid "Note: The descriptions of all yachts, sails and ships have been previously revised and published in good faith. "
+msgstr "Nota: La descripción de todos los yates, veleros y barcos de lujo, ha sido revisada con anterioridad y facilitada al cliente de buena fe. "
+
+msgid "They are supposed to be right but can not be guaranteed because there may be errors in the specifications."
+msgstr "Se suponen correctas pero no se pueden garantizar, ya que pueden contener alguna errata en sus especificaciones."
+
+msgid "Alquiler de Yates en Ibiza & Barcos Barcelona S.L., does not guarantee "
+msgstr "Alquiler de Yates en Ibiza & Barcos Barcelona S.L., no garantizan "
+
+msgid "nor do we assume any legal obligation for the exactness, "
+msgstr "ni asumen ninguna obligación legal ni responsabilidad por la exactitud, "
+
+msgid "integrity or utility of any image or information published "
+msgstr "integridad o utilidad de cualquier imagen o información descrita "
+
+msgid "in our web. The prices and details of the ship may vary "
+msgstr "en nuestro sitio web. Los precios y detalles de la embarcación pueden variar "
+
+msgid "depending on the season and these features will be specified "
+msgstr "según la temporada de alquiler y estos se especificarán debidamente "
+
+msgid "in your charter contract."
+msgstr "en su contrato de chárter."
+
+msgid "Some of the luxury ships and sails detailed in this web site "
+msgstr "Algunos de los barcos y veleros de lujo que se detallan en el sitio web "
+
+msgid "may have an extra charge for positioning "
+msgstr "pueden tener un costo adicional de posicionamiento "
+
+msgid "and later re positioning of the ship "
+msgstr "y posterior reposicionamiento de la embarcación "
+
+msgid "at the required port of sailing zone."
+msgstr "en el puerto o zona de navegación solicitada."
+
+msgid "Questions or suggestions"
+msgstr "Preguntas o sugerencias"
+
+msgid "Do not hesitate to contact us for further information "
+msgstr "No dude en contactarnos para más información "
+
+msgid "through the contact form or the phone "
+msgstr "a través del formulario de contacto o al teléfono "
+
+msgid ", we will answer as soon as possible."
+msgstr "y le atenderemos a la mayor brevedad."
+
+#: template parts / cbt_contacto.php
+
+msgid "Thank you for contacting us"
+msgstr "Contacte con nosotros"
+
+msgid "Yacht charter enterprise in Ibiza and the world "
+msgstr "Empresa de alquiler de yates en Ibiza y el resto del mundo "
+
+msgid "with more than 4.000 ships at your disposal."
+msgstr "con más de 4.000 embarcaciones a su disposición."
+
+msgid "Welcome to Alquiler de Yates en Ibiza, your expert partner in nautical leisure. "
+msgstr "Bienvenido a Alquiler de Yates en Ibiza, su socio experto en náutica de recreo. "
+
+msgid "Visit us in our offices from Monday to Friday "
+msgstr "Visítenos en nuestras oficinas de lunes a Viernes "
+
+msgid "in our business hours, 10:00 - 18:00, "
+msgstr "en el horario de 10:00 a 18:00 horas "
+ 
+msgid "and on Saturdays 10:00 - 14:00. "
+msgstr "y los sábados de 10:00 a 14:00 horas. "
+
+msgid "In other hours you can contact us through the phone number "
+msgstr "Fuera de este horario póngase en contacto con nosotros a través	del teléfono "
+
+msgid "You can find us"
+msgstr "Nos encontrará"
